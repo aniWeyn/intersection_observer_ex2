@@ -1,0 +1,134 @@
+body {
+  margin: 0px;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.box {
+  height: 120px;
+  width: 120px;
+  margin: 20px;
+}
+
+.one {
+  background-color: #264653ff;
+}
+
+.two {
+  background-color: #2a9d8fff;
+}
+
+.three {
+  background-color: #e9c46aff;
+}
+
+.four {
+  background-color: #f4a261ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.four .box--small {
+  height: 40px;
+  width: 40px;
+  background-color: #264653ff;
+}
+
+.five {
+  background-color: #e76f51ff;
+}
+
+.six {
+  background-color: #7d98a1;
+}
+
+.seven {
+  background-color: #5e6572;
+}
+
+.eight {
+  background-color: #9e2a2bff;
+}
+
+.nine {
+  background-color: #e09f3eff;
+}
+
+.poet {
+  background-image: url(../images/wislawa.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  -webkit-clip-path: polygon(44% 0, 100% 11%, 100% 73%, 23% 100%, 0 49%);
+          clip-path: polygon(44% 0, 100% 11%, 100% 73%, 23% 100%, 0 49%);
+}
+
+.intro, .intro--2, .intro--3, .intro--4 {
+  height: 900px;
+  width: 100%;
+  background-color: #fff3b0ff;
+}
+
+.intro--2 {
+  background-color: #f4a261ff;
+}
+
+.intro--3 {
+  background-color: #2a9d8fff;
+}
+
+.intro--4 {
+  background-color: #540b0eff;
+}
+
+/* ANIMATIONS */
+.fade-in, .fade-in--2, .fade-in--3, .fade-in--4 {
+  opacity: 0;
+  -webkit-transition: opacity 550ms ease-in;
+  transition: opacity 550ms ease-in;
+}
+
+.fade-in.appear, .fade-in--2.appear, .fade-in--3.appear, .fade-in--4.appear {
+  opacity: 1;
+}
+
+.left {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.right {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.fade-in--4 {
+  -webkit-transition: opacity 550ms ease-in, -webkit-transform 550ms ease-in;
+  transition: opacity 550ms ease-in, -webkit-transform 550ms ease-in;
+  transition: transform 550ms ease-in, opacity 550ms ease-in;
+  transition: transform 550ms ease-in, opacity 550ms ease-in, -webkit-transform 550ms ease-in;
+}
+
+.fade-in--4.center {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+/*# sourceMappingURL=index.css.map */
